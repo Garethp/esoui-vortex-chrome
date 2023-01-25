@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "author": "Gareth Parker",
+  "name": "ESOUIVortex",
+  "version": "1.0.0",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{79935964-d7bd-4b06-b9c2-d295d780556d}"
+    }
+  },
+  "permissions": [
+  ],
+  "host_permissions": ["*://*.esoui.com/downloads/*.html"],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.esoui.com/downloads/*.html"
+      ],
+      "js": [
+        "build/content.js"
+      ]
+    }
+  ]
+}
